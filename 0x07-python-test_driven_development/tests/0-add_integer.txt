@@ -1,0 +1,32 @@
+===============================
+ How to Use 0-add_integer.py
+===============================
+tests for 'add_integer'
+===============================
+
+This is a doctest that tests test cases for add_integer
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+    >>> add_integer(2, 3)
+    5
+    >>> add_integer(-2, 3)
+    1
+    >>> add_integer(2.5, 3)
+    5
+    >>> add_integer(1)
+    99
+    >>> add_integer(1.7)
+    99
+    >>> add_integer('a', 67)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+    >>> add_integer(45, '78k')
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+    >>> try:
+    ...     print(add_integer(None))
+    ... except Exception as e:
+    ...     print (e)
+    a must be an integer

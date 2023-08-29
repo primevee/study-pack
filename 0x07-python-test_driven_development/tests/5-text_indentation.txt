@@ -1,0 +1,23 @@
+======================================
+doctest for ``5-text_indentation.py``
+======================================
+using ``text_identation``
+=========================
+this doctest tests tests cases for text identation module
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+    >>> text_indentation(6736473647)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+    >>> text_indentation("")
+    >>> text_indentation("Hello. How are you? I'm fine. Thank you.")
+    Hello.
+    <BLANKLINE>
+    How are you?
+    <BLANKLINE>
+    I'm fine.
+    <BLANKLINE>
+    Thank you.
+    >>> text_indentation("This is a test")
+    This is a test

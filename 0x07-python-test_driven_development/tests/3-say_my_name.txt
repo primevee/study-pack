@@ -1,0 +1,21 @@
+================================
+doctest for ``3-say_my_name.py``
+================================
+using ``say_my_name``
+=====================
+
+this doctest tests to make sure ``say_my_name`` prints the correct first name.
+
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name(12)
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
+    >>> say_my_name("Katekani", 56)
+    Traceback (most recent call last):
+    ...
+    TypeError: last_name must be a string
+    >>> say_my_name("John", "Smith")
+    My name is John Smith
+    >>> say_my_name("Bob")
+    My name is Bob 
